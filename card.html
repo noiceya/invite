@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><3</title>
+    <link rel="stylesheet" href="card_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function()
+    {
+      $("button").click(function()
+      {
+        $("p").hide();
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="date">
+            <div class="envelope">
+            </div>
+            <div class="front">
+            </div>
+            <div class="card">
+                <div class="text"><b>24 stycznia 2025</b><br><b>Hotel Vulcan</b><br>ul. Franciszka Ksawerego Druckiego-Lubeckiego 6A, Szczecin<br></div>
+            </div>
+            <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+    $('.container').mouseenter(function () {
+        $('.card').stop().animate({
+            top: '-90px'
+        }, 'slow');
+    }).mouseleave(function () {
+        $('.card').stop().animate({
+            top: 0
+        }, 'slow');
+    });
+});
+</script>

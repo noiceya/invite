@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brush Script MT', cursive;
+}
+
+body{ 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fae1dd;
+    color: #d11ba4;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .tenor-gif-embed
+{
+    max-width: 500px;
+}
+
+.container .btn
+{
+    display: flex;
+    gap: 25px;
+}
+
+.btn a
+{
+    text-decoration: none;
+    color: #d11ba4;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: -5px -5px 20px rgba(0,0,0,0.4); 
+}
+
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.floating-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    animation: float 6s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
